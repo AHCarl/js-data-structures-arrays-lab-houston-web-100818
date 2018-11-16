@@ -14,5 +14,12 @@ function destructivelyRemoveLastDriver() {
 }
 
 function appendDriver(name) {
-  let newDrivers = Array.new()
+  let newDrivers = [drivers, ...name]
+  return newDrivers
 }
+
+function prependDriver(name) {
+  let newDrivers = [...name, drivers]
+}
+
+function remove
