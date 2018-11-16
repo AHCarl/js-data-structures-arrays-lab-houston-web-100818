@@ -19,7 +19,7 @@ function destructivelyRemoveFirstDriver() {
 
 function appendDriver(name) {
   const copyDrivers = drivers
-  copyDrivers.push(name);
+  return copyDrivers.push(name);
 }
 
 function prependDriver(name) {
